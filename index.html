@@ -21,6 +21,7 @@
     <meta property="og:image" content="assets/banner.png" />
 
     <link rel="stylesheet" href="styles.css" />
+    <script src="demo.js" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -51,6 +52,24 @@
           <a class="btn ghost" href="#how">How it works</a>
         </div>
         <p class="byok">🔑 Bring your own Anthropic API key — your code and key stay yours.</p>
+
+        <div class="demo" aria-hidden="true">
+          <div class="demo-window">
+            <div class="demo-bar">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              <em>Code Studio</em>
+            </div>
+            <div class="demo-body">
+              <pre class="demo-code"><code id="demo-code"></code><span class="caret" id="demo-caret"></span></pre>
+              <div class="demo-actions">
+                <button class="demo-btn" data-demo="explain">Explain</button>
+                <button class="demo-btn" data-demo="refactor">Refactor</button>
+                <button class="demo-btn" data-demo="document">Document</button>
+              </div>
+              <div class="demo-result" id="demo-result"></div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section id="features" class="features">
