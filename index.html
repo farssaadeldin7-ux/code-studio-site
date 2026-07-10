@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Code Studio — Explain, Refactor & Document code with Claude</title>
+    <meta
+      name="description"
+      content="Code Studio brings AI code explanations, refactoring suggestions, and documentation to your favorite tools — language-agnostic, powered by Claude. Available for WordPress, VS Code, the CLI, JetBrains, and Chrome/Edge."
+    />
+    <meta name="theme-color" content="#6a3df0" />
+    <link rel="icon" href="assets/icon.png" />
+
+    <!-- Open Graph / social preview -->
+    <meta property="og:title" content="Code Studio — AI code explanations, refactors & docs" />
+    <meta
+      property="og:description"
+      content="Explain, refactor, and document code in any language with Claude. Bring your own API key. Available across WordPress, VS Code, CLI, JetBrains, and Chrome/Edge."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/banner.png" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top">
+        <img src="assets/icon.png" alt="" width="32" height="32" />
+        <span>Code Studio</span>
+      </a>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#platforms">Get it</a>
+        <a href="#how">How it works</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <p class="eyebrow">Powered by Claude</p>
+        <h1>Understand, improve, and document any code — instantly.</h1>
+        <p class="lede">
+          Code Studio adds AI-powered <strong>explanations</strong>,
+          <strong>refactoring suggestions</strong>, and
+          <strong>documentation</strong> to the tools you already use. It's
+          language-agnostic — paste code in any language and Claude figures out
+          the rest.
+        </p>
+        <div class="cta-row">
+          <a class="btn primary" href="#platforms">Get Code Studio</a>
+          <a class="btn ghost" href="#how">How it works</a>
+        </div>
+        <p class="byok">🔑 Bring your own Anthropic API key — your code and key stay yours.</p>
+      </section>
+
+      <section id="features" class="features">
+        <h2>Three things, done well</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="ico">📖</div>
+            <h3>Explain</h3>
+            <p>
+              Get a clear, high-level summary followed by a walkthrough of the
+              important parts — great for unfamiliar code and code review.
+            </p>
+          </article>
+          <article class="card">
+            <div class="ico">🛠️</div>
+            <h3>Refactor</h3>
+            <p>
+              Concrete, idiomatic suggestions for readability, correctness, and
+              performance — each with a short "why" and example snippet.
+            </p>
+          </article>
+          <article class="card">
+            <div class="ico">📝</div>
+            <h3>Document</h3>
+            <p>
+              Generate doc comments in the language's conventional style —
+              JSDoc, docstrings, Javadoc — plus a module overview.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="platforms" class="platforms">
+        <h2>Available everywhere you work</h2>
+        <p class="section-sub">
+          One engine, wrapped for each platform. Install the one you need — each
+          is bring-your-own-key.
+        </p>
+        <div class="grid">
+          <a class="platform" href="https://wordpress.org/plugins/code-studio/" target="_blank" rel="noreferrer">
+            <h3>WordPress</h3>
+            <p>Plugin for the WP admin — a tool page plus settings.</p>
+            <span class="go">Get plugin →</span>
+          </a>
+          <a class="platform" href="https://marketplace.visualstudio.com/search?term=code%20studio%20claude&target=VSCode" target="_blank" rel="noreferrer">
+            <h3>VS Code</h3>
+            <p>Right-click any selection → Explain / Refactor / Document.</p>
+            <span class="go">Get extension →</span>
+          </a>
+          <a class="platform" href="https://www.npmjs.com/package/@farseman/code-studio" target="_blank" rel="noreferrer">
+            <h3>CLI (npm)</h3>
+            <p><code>code-studio explain file.py</code> — pipe or pass a file.</p>
+            <span class="go">Get on npm →</span>
+          </a>
+          <a class="platform" href="https://plugins.jetbrains.com/search?search=code%20studio" target="_blank" rel="noreferrer">
+            <h3>JetBrains</h3>
+            <p>IntelliJ, PyCharm, WebStorm, Android Studio & more.</p>
+            <span class="go">Get plugin →</span>
+          </a>
+          <a class="platform" href="https://chrome.google.com/webstore/search/code%20studio%20claude" target="_blank" rel="noreferrer">
+            <h3>Chrome / Edge</h3>
+            <p>Paste code in the popup and stream the answer.</p>
+            <span class="go">Get extension →</span>
+          </a>
+          <a class="platform soon">
+            <h3>More coming</h3>
+            <p>Slack, Cursor, and other platforms are on the way.</p>
+            <span class="go">Stay tuned</span>
+          </a>
+        </div>
+      </section>
+
+      <section id="how" class="how">
+        <h2>How it works</h2>
+        <ol class="steps">
+          <li>
+            <span class="n">1</span>
+            <div>
+              <h3>Install & add your key</h3>
+              <p>
+                Grab Code Studio for your platform and paste your Anthropic API
+                key. Get one at
+                <a href="https://console.anthropic.com" target="_blank" rel="noreferrer">console.anthropic.com</a>.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span class="n">2</span>
+            <div>
+              <h3>Select or paste code</h3>
+              <p>Highlight a snippet, open a file, or paste into the box — any language.</p>
+            </div>
+          </li>
+          <li>
+            <span class="n">3</span>
+            <div>
+              <h3>Explain, Refactor, or Document</h3>
+              <p>Claude responds in seconds, streamed right where you're working.</p>
+            </div>
+          </li>
+        </ol>
+        <p class="privacy">
+          Code Studio has <strong>no server of its own</strong>. Requests go
+          straight from your device to the Anthropic API using your key — nothing
+          is stored or proxied.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Code Studio by
+        <a href="https://lasfitair.com" target="_blank" rel="noreferrer">farseman</a>
+        · Powered by Claude ·
+        <a href="https://github.com/farssaadeldin7-ux/code-studio-plugin" target="_blank" rel="noreferrer">Source on GitHub</a>
+      </p>
+    </footer>
+  </body>
+</html>
