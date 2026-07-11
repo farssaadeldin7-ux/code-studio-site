@@ -326,6 +326,18 @@ h2 {
   border-radius: 5px;
   font-size: 12px;
 }
+.platform .install {
+  display: block;
+  background: #15121f;
+  color: #cfc8ea;
+  padding: 8px 10px;
+  border-radius: 7px;
+  font-size: 12px;
+  margin-bottom: 12px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
 .platform .go {
   font-weight: 700;
   color: var(--purple);
