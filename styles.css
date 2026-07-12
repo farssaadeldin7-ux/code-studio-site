@@ -234,6 +234,12 @@ h2 {
   font-size: 13px;
   transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease;
 }
+/* Refactor is the core action — give it more weight in the demo bar. */
+.demo-btn.primary {
+  flex: 2;
+  border-color: var(--purple);
+  color: #d7cbff;
+}
 .demo-btn.active {
   background: var(--purple);
   color: #fff;
@@ -248,6 +254,7 @@ h2 {
   color: #cfc8ea;
   font-size: 13px;
   line-height: 1.6;
+  white-space: pre-wrap;
 }
 .demo-result.streaming::after {
   content: "▋";
@@ -289,6 +296,24 @@ h2 {
 .card p {
   margin: 0;
   color: var(--muted);
+}
+.card .tag {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 6px;
+  padding: 2px 9px;
+  border-radius: 999px;
+  background: var(--purple);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.card .tag.lite {
+  background: var(--bg-soft);
+  color: var(--purple);
+  border: 1px solid var(--line);
 }
 
 /* Platforms */

@@ -3,19 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Code Studio — Explain, Refactor & Document code with Claude</title>
+    <title>Code Studio — the AI Refactor Assistant, powered by Claude</title>
     <meta
       name="description"
-      content="Code Studio brings AI code explanations, refactoring suggestions, and documentation to your favorite tools — language-agnostic, powered by Claude. Available for WordPress, VS Code, the CLI, JetBrains, and Chrome/Edge."
+      content="Code Studio is an AI Refactor Assistant — concrete, idiomatic refactoring suggestions for any language, each led by a built-in 1–2 sentence explanation of why. Powered by Claude, bring-your-own-key. Available for WordPress, VS Code, the CLI, JetBrains, and Chrome/Edge."
     />
     <meta name="theme-color" content="#6a3df0" />
     <link rel="icon" href="assets/icon.png" />
 
     <!-- Open Graph / social preview -->
-    <meta property="og:title" content="Code Studio — AI code explanations, refactors & docs" />
+    <meta property="og:title" content="Code Studio — the AI Refactor Assistant" />
     <meta
       property="og:description"
-      content="Explain, refactor, and document code in any language with Claude. Bring your own API key. Available across WordPress, VS Code, CLI, JetBrains, and Chrome/Edge."
+      content="Concrete refactoring suggestions for any language, each led by a built-in explanation of why. Powered by Claude, bring your own API key. Available across WordPress, VS Code, CLI, JetBrains, and Chrome/Edge."
     />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="assets/banner.png" />
@@ -39,13 +39,13 @@
     <main id="top">
       <section class="hero">
         <p class="eyebrow">Powered by Claude</p>
-        <h1>Understand, improve, and document any code — instantly.</h1>
+        <h1>Refactor any code — and know <em>why</em>, instantly.</h1>
         <p class="lede">
-          Code Studio adds AI-powered <strong>explanations</strong>,
-          <strong>refactoring suggestions</strong>, and
-          <strong>documentation</strong> to the tools you already use. It's
-          language-agnostic — paste code in any language and Claude figures out
-          the rest.
+          Code Studio is an AI <strong>Refactor Assistant</strong>. Paste code in
+          any language and get concrete, idiomatic
+          <strong>refactoring suggestions</strong> — each led by a built-in
+          <strong>one-line explanation</strong> of why it should change. One AI
+          call gives you both the <em>why</em> and the <em>how</em>.
         </p>
         <div class="cta-row">
           <a class="btn primary" href="#platforms">Get Code Studio</a>
@@ -62,8 +62,7 @@
             <div class="demo-body">
               <pre class="demo-code"><code id="demo-code"></code><span class="caret" id="demo-caret"></span></pre>
               <div class="demo-actions">
-                <button class="demo-btn" data-demo="explain">Explain</button>
-                <button class="demo-btn" data-demo="refactor">Refactor</button>
+                <button class="demo-btn primary" data-demo="refactor">Refactor</button>
                 <button class="demo-btn" data-demo="document">Document</button>
               </div>
               <div class="demo-result" id="demo-result"></div>
@@ -73,30 +72,36 @@
       </section>
 
       <section id="features" class="features">
-        <h2>Three things, done well</h2>
+        <h2>Refactor first. Understand instantly.</h2>
+        <p class="section-sub">
+          One core engine does the heavy lifting — and explains itself in the
+          same breath.
+        </p>
         <div class="cards">
           <article class="card">
-            <div class="ico">📖</div>
-            <h3>Explain</h3>
+            <div class="ico">🛠️</div>
+            <h3>Refactor Assistant <span class="tag">core</span></h3>
             <p>
-              Get a clear, high-level summary followed by a walkthrough of the
-              important parts — great for unfamiliar code and code review.
+              The engine. Concrete, idiomatic suggestions for readability,
+              correctness, and performance — each with a short rationale and an
+              example snippet. This is the product.
             </p>
           </article>
           <article class="card">
-            <div class="ico">🛠️</div>
-            <h3>Refactor</h3>
+            <div class="ico">💡</div>
+            <h3>Built-in explanation <span class="tag lite">lite</span></h3>
             <p>
-              Concrete, idiomatic suggestions for readability, correctness, and
-              performance — each with a short "why" and example snippet.
+              Every refactor opens with a plain-language, 1–2 sentence summary of
+              what the code does and why it should change — no separate step, no
+              extra call. The same AI that refactors tells you why.
             </p>
           </article>
           <article class="card">
             <div class="ico">📝</div>
             <h3>Document</h3>
             <p>
-              Generate doc comments in the language's conventional style —
-              JSDoc, docstrings, Javadoc — plus a module overview.
+              Need docs too? Generate comments in the language's conventional
+              style — JSDoc, docstrings, Javadoc — plus a module overview.
             </p>
           </article>
         </div>
@@ -114,14 +119,14 @@
             <p>Plugin for the WP admin — a tool page plus settings.</p>
             <span class="go">Get plugin →</span>
           </a>
-          <a class="platform" href="https://marketplace.visualstudio.com/search?term=code%20studio%20claude&target=VSCode" target="_blank" rel="noreferrer">
-            <h3>VS Code</h3>
-            <p>Right-click any selection → Explain / Refactor / Document.</p>
-            <span class="go">Get extension →</span>
+          <a class="platform" href="https://open-vsx.org/extension/farseman/code-studio" target="_blank" rel="noreferrer">
+            <h3>VS Code-compatible</h3>
+            <p>Right-click a selection → Refactor. Live on Open VSX for VSCodium, Cursor, Windsurf & Gitpod.</p>
+            <span class="go">Get on Open VSX →</span>
           </a>
           <a class="platform" href="https://www.npmjs.com/package/@farseman/code-studio" target="_blank" rel="noreferrer">
             <h3>CLI (npm)</h3>
-            <p><code>code-studio explain file.py</code> — pipe or pass a file.</p>
+            <p><code>code-studio refactor file.py</code> — pipe or pass a file.</p>
             <code class="install">npm i -g @farseman/code-studio</code>
             <span class="go">Get on npm →</span>
           </a>
@@ -132,7 +137,7 @@
           </a>
           <a class="platform" href="https://chrome.google.com/webstore/search/code%20studio%20claude" target="_blank" rel="noreferrer">
             <h3>Chrome / Edge</h3>
-            <p>Paste code in the popup and stream the answer.</p>
+            <p>Paste code in the popup, hit Refactor, stream the answer.</p>
             <span class="go">Get extension →</span>
           </a>
           <a class="platform soon">
@@ -167,8 +172,12 @@
           <li>
             <span class="n">3</span>
             <div>
-              <h3>Explain, Refactor, or Document</h3>
-              <p>Claude responds in seconds, streamed right where you're working.</p>
+              <h3>Refactor — and read the why</h3>
+              <p>
+                Claude streams back a one-line "why refactor" summary followed by
+                concrete suggestions, right where you're working. (Prefer docs?
+                Hit Document.)
+              </p>
             </div>
           </li>
         </ol>

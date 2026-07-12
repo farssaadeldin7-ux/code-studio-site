@@ -1,4 +1,5 @@
-// Self-running hero demo: types code, "runs" Explain, streams a reply, loops.
+// Self-running hero demo: types code, "runs" Refactor, streams the reply
+// (a "why refactor" line + suggestions), loops.
 (function () {
   const codeEl = document.getElementById('demo-code');
   const caretEl = document.getElementById('demo-caret');
@@ -17,10 +18,13 @@
   ].join('\n');
 
   const ANSWER =
-    'JavaScript. This is a debounce helper. It returns a wrapped ' +
-    'function that delays calling fn until ms milliseconds have ' +
-    'passed since the last call — each new call cancels the pending ' +
-    'one. Great for search inputs, resize, and scroll handlers.';
+    'Why refactor: JavaScript — a debounce helper that delays fn until ms ' +
+    'milliseconds pass without a new call. It works, but the pending timer ' +
+    "can't be cancelled and the intent is implicit.\n\n" +
+    'Suggestions\n' +
+    '• Name the returned function so stack traces stay readable.\n' +
+    '• Expose a .cancel() to clear the timer on unmount.\n' +
+    '• Add a leading-edge option for the first call.';
 
   const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
   const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -56,7 +60,7 @@
       resultEl.textContent = '';
       await typeCode();
       await sleep(500);
-      setActive('explain');
+      setActive('refactor');
       await sleep(450);
       await streamAnswer();
       if (prefersReduced) return; // show one static pass, no loop
