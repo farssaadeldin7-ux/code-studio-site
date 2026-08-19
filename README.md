@@ -6,4 +6,5 @@ Static HTML/CSS, hosted on GitHub Pages. To work on it locally just open `index.
 
 - Live site: https://farssaadeldin7-ux.github.io/code-studio-site/
 - Plugin source: https://github.com/farssaadeldin7-ux/code-studio-plugin
+- Plugin portfolio (14 plugin concepts, audiences, and monetization): [`plugins/`](plugins/)
 - By farseman

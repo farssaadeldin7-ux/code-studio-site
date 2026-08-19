@@ -1,0 +1,10 @@
+{
+  "name": "professor-mind-reader",
+  "displayName": "Professor Mind-Reader",
+  "version": "0.1.0",
+  "description": "Rubric analysis that reveals what graders actually prioritize.",
+  "category": "Academic",
+  "tier": "flagship",
+  "status": "concept",
+  "author": "farseman"
+}

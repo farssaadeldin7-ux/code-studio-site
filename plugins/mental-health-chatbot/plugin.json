@@ -1,0 +1,10 @@
+{
+  "name": "mental-health-chatbot",
+  "displayName": "Mental-Health Chatbot",
+  "version": "0.1.0",
+  "description": "Supportive conversations with built-in escalation to humans.",
+  "category": "Health & Wellness",
+  "tier": "professional",
+  "status": "concept",
+  "author": "farseman"
+}

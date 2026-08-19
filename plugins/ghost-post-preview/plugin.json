@@ -1,0 +1,10 @@
+{
+  "name": "ghost-post-preview",
+  "displayName": "Ghost Post Preview",
+  "version": "0.1.0",
+  "description": "Predict engagement before you publish.",
+  "category": "Social Media",
+  "tier": "flagship",
+  "status": "concept",
+  "author": "farseman"
+}

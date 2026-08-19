@@ -1,0 +1,10 @@
+{
+  "name": "emotional-resonance-analyzer",
+  "displayName": "Real-Time Emotional Resonance Analyzer",
+  "version": "0.1.0",
+  "description": "See predicted audience emotion across your timeline.",
+  "category": "Video Editing",
+  "tier": "professional",
+  "status": "concept",
+  "author": "farseman"
+}

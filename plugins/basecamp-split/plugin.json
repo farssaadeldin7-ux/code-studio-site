@@ -1,0 +1,10 @@
+{
+  "name": "basecamp-split",
+  "displayName": "Basecamp Split",
+  "version": "0.1.0",
+  "description": "Group logistics and shared-gear management for expeditions.",
+  "category": "Bushcraft",
+  "tier": "flagship",
+  "status": "concept",
+  "author": "farseman"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "five-minute-fluency",
+  "displayName": "5-Minute Fluency",
+  "version": "0.1.0",
+  "description": "Personalized cheat sheets generated from your own gameplay.",
+  "category": "Gaming",
+  "tier": "flagship",
+  "status": "concept",
+  "author": "farseman"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "digital-twin-collaborator",
+  "displayName": "Generative Digital Twin Collaborator",
+  "version": "0.1.0",
+  "description": "An apprentice trained on your own body of work.",
+  "category": "Creative Tools",
+  "tier": "professional",
+  "status": "concept",
+  "author": "farseman"
+}

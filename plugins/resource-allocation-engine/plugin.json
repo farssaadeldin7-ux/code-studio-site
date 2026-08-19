@@ -1,0 +1,10 @@
+{
+  "name": "resource-allocation-engine",
+  "displayName": "Predictive Resource Allocation Engine",
+  "version": "0.1.0",
+  "description": "Know your render and compute bottlenecks before you hit them.",
+  "category": "Infrastructure",
+  "tier": "professional",
+  "status": "concept",
+  "author": "farseman"
+}

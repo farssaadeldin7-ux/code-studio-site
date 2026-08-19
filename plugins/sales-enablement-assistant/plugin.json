@@ -1,0 +1,10 @@
+{
+  "name": "sales-enablement-assistant",
+  "displayName": "Sales Enablement Assistant",
+  "version": "0.1.0",
+  "description": "Personalized outreach that doesn't read like a template.",
+  "category": "Sales",
+  "tier": "professional",
+  "status": "concept",
+  "author": "farseman"
+}

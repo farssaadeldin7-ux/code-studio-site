@@ -1,0 +1,10 @@
+{
+  "name": "customer-support-agent",
+  "displayName": "AI-Powered Customer Support Agent",
+  "version": "0.1.0",
+  "description": "Ticket resolution trained on your own knowledge base.",
+  "category": "Customer Support",
+  "tier": "professional",
+  "status": "concept",
+  "author": "farseman"
+}

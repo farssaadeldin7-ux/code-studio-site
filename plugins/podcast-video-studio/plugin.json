@@ -1,0 +1,10 @@
+{
+  "name": "podcast-video-studio",
+  "displayName": "Podcast/Video Studio",
+  "version": "0.1.0",
+  "description": "AI-assisted editing that prioritizes high-retention segments.",
+  "category": "Content Production",
+  "tier": "professional",
+  "status": "concept",
+  "author": "farseman"
+}

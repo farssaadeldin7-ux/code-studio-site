@@ -1,0 +1,10 @@
+{
+  "name": "diagnose-by-sound",
+  "displayName": "Diagnose by Sound",
+  "version": "0.1.0",
+  "description": "Automated audio diagnostics for engines and machinery.",
+  "category": "Mechanical",
+  "tier": "flagship",
+  "status": "concept",
+  "author": "farseman"
+}

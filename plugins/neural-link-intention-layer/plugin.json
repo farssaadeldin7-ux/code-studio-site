@@ -1,0 +1,10 @@
+{
+  "name": "neural-link-intention-layer",
+  "displayName": "Neural-Link Intention Layer",
+  "version": "0.1.0",
+  "description": "Predictive tool-switching that anticipates your next action.",
+  "category": "Creative Tools",
+  "tier": "professional",
+  "status": "concept",
+  "author": "farseman"
+}
