@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pricing — Code Studio plugins</title>
+    <meta
+      name="description"
+      content="Plans for Code Studio's pro plugins. Start a free 14-day trial, or go Pro ($40/month) or Team ($79/month). Licence keys are issued instantly and work wherever the plugin is installed — including Open VSX installs."
+    />
+    <meta name="theme-color" content="#6a3df0" />
+    <link rel="icon" href="assets/icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="pricing.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <img src="assets/icon.png" alt="" width="32" height="32" />
+        <span>Code Studio</span>
+      </a>
+      <nav>
+        <a href="index.html#features">Features</a>
+        <a href="index.html#platforms">Get it</a>
+        <a href="pricing.html">Pricing</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero pricing-hero">
+        <p class="eyebrow">Simple plans, instant licence keys</p>
+        <h1>Pricing</h1>
+        <p class="lede">
+          Install the plugin anywhere — Open VSX, the marketplace, npm — then
+          unlock it with a licence key from here. Keys are issued the moment
+          checkout completes and activate in one step.
+        </p>
+      </section>
+
+      <section class="pricing" data-plugin="diagnose-by-sound">
+        <h2>Diagnose by Sound</h2>
+        <p class="section-sub">
+          Ranked, testable vehicle-noise diagnosis with calibrated confidence, a
+          safety verdict, repair plans and shop case history.
+        </p>
+
+        <div class="cards plans">
+          <article class="card plan" data-plan="trial">
+            <h3>Trial <span class="tag lite">14 days</span></h3>
+            <p class="price"><strong>$0</strong></p>
+            <ul>
+              <li>Everything included</li>
+              <li>25 diagnoses / month</li>
+              <li>1 seat · one trial per email</li>
+            </ul>
+            <div class="trial-form">
+              <input type="email" id="trial-email" placeholder="you@shop.com" autocomplete="email" />
+              <button class="btn ghost" id="trial-btn">Start free trial</button>
+            </div>
+          </article>
+
+          <article class="card plan featured" data-plan="pro">
+            <h3>Pro <span class="tag">popular</span></h3>
+            <p class="price"><strong data-price="pro">$40</strong><span>/month</span></p>
+            <ul>
+              <li>Unlimited diagnoses</li>
+              <li>Repair plans with book labour hours</li>
+              <li>Shop case history</li>
+              <li>2 seats</li>
+            </ul>
+            <button class="btn primary buy" data-plan="pro">Buy Pro</button>
+          </article>
+
+          <article class="card plan" data-plan="team">
+            <h3>Team</h3>
+            <p class="price"><strong data-price="team">$79</strong><span>/month</span></p>
+            <ul>
+              <li>Everything in Pro</li>
+              <li>10 seats for the whole shop</li>
+              <li>Shared licence, per-machine activation</li>
+            </ul>
+            <button class="btn primary buy" data-plan="team">Buy Team</button>
+          </article>
+        </div>
+
+        <div class="checkout-note" id="checkout-note" role="status"></div>
+
+        <p class="privacy">
+          Payments run through <strong>Stripe Checkout</strong> — card details
+          never touch this site. Your licence key appears on the success page
+          and can be managed (change plan, cancel) from inside the plugin via
+          the billing portal.
+        </p>
+      </section>
+
+      <section class="how">
+        <h2>How activation works</h2>
+        <ol class="steps">
+          <li>
+            <span class="n">1</span>
+            <div>
+              <h3>Install the plugin</h3>
+              <p>From Open VSX, the plugin marketplace, or npm — the plugin itself is a free install.</p>
+            </div>
+          </li>
+          <li>
+            <span class="n">2</span>
+            <div>
+              <h3>Buy a plan or start a trial</h3>
+              <p>Checkout takes a minute; the licence key is shown immediately after payment.</p>
+            </div>
+          </li>
+          <li>
+            <span class="n">3</span>
+            <div>
+              <h3>Paste the key</h3>
+              <p>Tell the plugin to activate — it stores the key on your machine and every paid tool unlocks.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Code Studio by farseman · Powered by Claude ·
+        <a href="https://github.com/farssaadeldin7-ux/code-studio-plugin" target="_blank" rel="noreferrer">Source on GitHub</a>
+      </p>
+    </footer>
+  </body>
+</html>

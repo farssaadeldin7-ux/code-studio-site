@@ -423,6 +423,89 @@ h2 {
   padding: 18px 22px;
 }
 
+/* Pricing */
+.pricing-hero {
+  padding-bottom: 20px;
+}
+.plans {
+  align-items: stretch;
+}
+.plan {
+  display: flex;
+  flex-direction: column;
+}
+.plan.featured {
+  border-color: var(--purple);
+  box-shadow: 0 10px 30px rgba(106, 61, 240, 0.12);
+}
+.plan .price {
+  margin: 4px 0 10px;
+  color: var(--muted);
+}
+.plan .price strong {
+  color: var(--ink);
+  font-size: 34px;
+  letter-spacing: -0.02em;
+}
+.plan ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 18px;
+  color: var(--muted);
+  flex: 1;
+}
+.plan ul li {
+  padding: 5px 0 5px 24px;
+  position: relative;
+}
+.plan ul li::before {
+  content: "✓";
+  position: absolute;
+  left: 2px;
+  color: var(--purple);
+  font-weight: 800;
+}
+.plan .btn {
+  width: 100%;
+  text-align: center;
+  border: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+.plan .btn.ghost {
+  border: 1.5px solid var(--line);
+}
+.plan .btn:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+.trial-form {
+  display: grid;
+  gap: 8px;
+}
+.trial-form input {
+  padding: 11px 12px;
+  border: 1.5px solid var(--line);
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: inherit;
+}
+.trial-form input:focus {
+  outline: none;
+  border-color: var(--purple);
+}
+.checkout-note {
+  min-height: 24px;
+  margin-top: 22px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+.checkout-note.error {
+  color: #c0392b;
+}
+
 /* Footer */
 .site-footer {
   border-top: 1px solid var(--line);
