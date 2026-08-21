@@ -54,8 +54,8 @@
               <li>1 seat · one trial per email</li>
             </ul>
             <div class="trial-form">
-              <input type="email" id="trial-email" placeholder="you@shop.com" autocomplete="email" />
-              <button class="btn ghost" id="trial-btn">Start free trial</button>
+              <input type="email" class="trial-email" placeholder="you@shop.com" autocomplete="email" />
+              <button class="btn ghost trial-btn">Start free trial</button>
             </div>
           </article>
 
@@ -83,7 +83,58 @@
           </article>
         </div>
 
-        <div class="checkout-note" id="checkout-note" role="status"></div>
+        <div class="checkout-note" role="status"></div>
+      </section>
+
+      <section class="pricing" data-plugin="ghost-post-preview">
+        <h2>Ghost Post Preview</h2>
+        <p class="section-sub">
+          Read a draft post the way its audience and its ranking system will —
+          fold test, mechanical draft lint with the evidence quoted, and a
+          prediction log that keeps score of every call. Never a fabricated
+          engagement number.
+        </p>
+
+        <div class="cards plans">
+          <article class="card plan" data-plan="trial">
+            <h3>Trial <span class="tag lite">14 days</span></h3>
+            <p class="price"><strong>$0</strong></p>
+            <ul>
+              <li>Everything included</li>
+              <li>25 lint passes / month</li>
+              <li>1 seat · one trial per email</li>
+            </ul>
+            <div class="trial-form">
+              <input type="email" class="trial-email" placeholder="you@studio.com" autocomplete="email" />
+              <button class="btn ghost trial-btn">Start free trial</button>
+            </div>
+          </article>
+
+          <article class="card plan featured" data-plan="pro">
+            <h3>Pro <span class="tag">popular</span></h3>
+            <p class="price"><strong data-price="pro">$40</strong><span>/month</span></p>
+            <ul>
+              <li>Unlimited draft lint passes</li>
+              <li>Prediction log with a running record</li>
+              <li>Drafts never leave your machine</li>
+              <li>2 seats</li>
+            </ul>
+            <button class="btn primary buy" data-plan="pro">Buy Pro</button>
+          </article>
+
+          <article class="card plan" data-plan="team">
+            <h3>Team</h3>
+            <p class="price"><strong data-price="team">$79</strong><span>/month</span></p>
+            <ul>
+              <li>Everything in Pro</li>
+              <li>10 seats for the whole team</li>
+              <li>Shared licence, per-machine activation</li>
+            </ul>
+            <button class="btn primary buy" data-plan="team">Buy Team</button>
+          </article>
+        </div>
+
+        <div class="checkout-note" role="status"></div>
 
         <p class="privacy">
           Payments run through <strong>Stripe Checkout</strong> — card details
