@@ -35,7 +35,7 @@ for (const section of document.querySelectorAll(".pricing")) {
         if (el && plan.price) el.textContent = `$${Math.round(plan.price / 100)}`;
       }
     } catch {
-      for (const btn of section.querySelectorAll(".buy, .trial-btn")) btn.disabled = true;
+      for (const btn of section.querySelectorAll(".buy")) btn.disabled = true;
       say("Checkout is briefly unavailable — refresh in a minute or email us.", true);
     }
   })();
@@ -56,28 +56,4 @@ for (const section of document.querySelectorAll(".pricing")) {
       }
     });
   }
-
-  const trialButton = section.querySelector(".trial-btn");
-  trialButton.addEventListener("click", async () => {
-    const email = section.querySelector(".trial-email").value.trim();
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-      say("Enter the email address the trial licence should be issued to.", true);
-      return;
-    }
-    trialButton.disabled = true;
-    say("Issuing your trial licence…");
-    try {
-      const trial = await api("POST", "/v1/trial", { plugin_id: pluginId, email });
-      note.innerHTML = "";
-      const strong = document.createElement("strong");
-      strong.textContent = trial.license_key;
-      note.append("Your trial key (also keep a copy somewhere safe): ", strong,
-        " — paste it into the plugin to activate. Valid until " +
-        new Date(trial.expires).toLocaleDateString() + ".");
-      note.classList.remove("error");
-    } catch (err) {
-      say(err.message, true);
-      trialButton.disabled = false;
-    }
-  });
 }

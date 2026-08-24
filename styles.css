@@ -479,21 +479,6 @@ h2 {
   opacity: 0.55;
   cursor: default;
 }
-.trial-form {
-  display: grid;
-  gap: 8px;
-}
-.trial-form input {
-  padding: 11px 12px;
-  border: 1.5px solid var(--line);
-  border-radius: 10px;
-  font-size: 14px;
-  font-family: inherit;
-}
-.trial-form input:focus {
-  outline: none;
-  border-color: var(--purple);
-}
 .checkout-note {
   min-height: 24px;
   margin-top: 22px;
