@@ -4,6 +4,6 @@ Marketing/landing site for **Code Studio**, the AI **Refactor Assistant** powere
 
 Static HTML/CSS, hosted on GitHub Pages. To work on it locally just open `index.html` in a browser (no build step).
 
-- Live site: https://farssaadeldin7-ux.github.io/code-studio-site/
+- Live site: https://www.codestudioplugin.com/
 - Plugin source: https://github.com/farssaadeldin7-ux/code-studio-plugin
 - By farseman
