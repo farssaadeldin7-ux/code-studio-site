@@ -1,0 +1,30 @@
+{
+  "name": "code-studio-backend",
+  "version": "1.0.0",
+  "description": "Stripe subscription + license backend for the Code Studio plugin (AI Refactor Assistant).",
+  "type": "module",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "stripe",
+    "subscriptions",
+    "licensing",
+    "code-studio",
+    "express"
+  ],
+  "author": "farseman",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "stripe": "^17.5.0"
+  }
+}
