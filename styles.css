@@ -441,3 +441,26 @@ h2 {
     display: none;
   }
 }
+
+/* --- 404 page --- */
+.nf {
+  max-width: 34rem;
+  margin: 0 auto;
+  padding: 6rem 1.5rem 8rem;
+  text-align: center;
+}
+.nf .code {
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: #6a3df0;
+  margin: 0 0 0.25rem;
+}
+.nf h1 {
+  font-size: 1.6rem;
+  margin: 0 0 0.75rem;
+}
+.nf p {
+  color: #5b5670;
+  margin: 0 0 2rem;
+}

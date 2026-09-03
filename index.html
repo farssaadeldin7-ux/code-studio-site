@@ -11,14 +11,30 @@
     <meta name="theme-color" content="#6a3df0" />
     <link rel="icon" href="assets/icon.png" />
 
+    <link rel="canonical" href="https://www.codestudioplugin.com/" />
+
     <!-- Open Graph / social preview -->
+    <meta property="og:site_name" content="Code Studio" />
     <meta property="og:title" content="Code Studio — the AI Refactor Assistant" />
     <meta
       property="og:description"
-      content="Concrete refactoring suggestions for any language, each led by a built-in explanation of why. Powered by Claude, bring your own API key. Available across WordPress, VS Code, CLI, JetBrains, and Chrome/Edge."
+      content="Concrete refactoring suggestions for any language, each led by a built-in explanation of why. Powered by Claude, bring your own API key."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="assets/banner.png" />
+    <meta property="og:url" content="https://www.codestudioplugin.com/" />
+    <meta property="og:image" content="https://www.codestudioplugin.com/assets/banner.png" />
+    <meta property="og:image:width" content="772" />
+    <meta property="og:image:height" content="250" />
+    <meta property="og:image:alt" content="Code Studio — the AI Refactor Assistant, powered by Claude" />
+
+    <!-- Twitter / X card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Code Studio — the AI Refactor Assistant" />
+    <meta
+      name="twitter:description"
+      content="Concrete refactoring suggestions for any language, each led by a built-in explanation of why. Powered by Claude, bring your own API key."
+    />
+    <meta name="twitter:image" content="https://www.codestudioplugin.com/assets/banner.png" />
 
     <link rel="stylesheet" href="styles.css" />
     <script src="demo.js" defer></script>
@@ -62,8 +78,8 @@
             <div class="demo-body">
               <pre class="demo-code"><code id="demo-code"></code><span class="caret" id="demo-caret"></span></pre>
               <div class="demo-actions">
-                <button class="demo-btn primary" data-demo="refactor">Refactor</button>
-                <button class="demo-btn" data-demo="document">Document</button>
+                <button class="demo-btn primary" data-demo="refactor" tabindex="-1" aria-hidden="true">Refactor</button>
+                <button class="demo-btn" data-demo="document" tabindex="-1" aria-hidden="true">Document</button>
               </div>
               <div class="demo-result" id="demo-result"></div>
             </div>
@@ -192,7 +208,8 @@
     <footer class="site-footer">
       <p>
         Code Studio by farseman · Powered by Claude ·
-        <a href="https://github.com/farssaadeldin7-ux/code-studio-plugin" target="_blank" rel="noreferrer">Source on GitHub</a>
+        <a href="https://www.npmjs.com/package/@farseman/code-studio" target="_blank" rel="noreferrer">CLI on npm</a> ·
+        <a href="https://open-vsx.org/extension/farseman/code-studio" target="_blank" rel="noreferrer">Extension on Open VSX</a>
       </p>
     </footer>
   </body>
