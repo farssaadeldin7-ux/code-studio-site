@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Payment received — Code Studio</title>
+    <meta name="description" content="Your Code Studio subscription is active." />
+    <meta name="theme-color" content="#6a3df0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" href="assets/icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .receipt {
+        max-width: 620px;
+        margin: 0 auto;
+        text-align: left;
+        background: var(--bg-soft);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 22px 24px;
+      }
+      .receipt h2 { font-size: 17px; margin: 0 0 10px; }
+      .receipt ol { margin: 0; padding-left: 20px; color: var(--muted); }
+      .receipt li + li { margin-top: 8px; }
+      .ref { display: block; margin-top: 18px; font-size: 13px; color: var(--muted); word-break: break-all; }
+      .ref code { background: #fff; border: 1px solid var(--line); border-radius: 6px; padding: 2px 6px; }
+      .tick {
+        width: 56px; height: 56px; margin: 0 auto 18px;
+        border-radius: 50%; background: var(--purple); color: #fff;
+        font-size: 30px; line-height: 56px; text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/">
+        <img src="assets/icon.png" alt="" width="32" height="32" />
+        <span>Code Studio</span>
+      </a>
+      <nav>
+        <a href="/#features">Features</a>
+        <a href="/#platforms">Get it</a>
+        <a href="/#how">How it works</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <div class="tick" aria-hidden="true">&check;</div>
+      <h1>Payment received</h1>
+      <p class="lede">
+        Your Code Studio subscription is active. Your licence key is on its way
+        to the email address you used at checkout.
+      </p>
+
+      <div class="receipt">
+        <h2>Next steps</h2>
+        <ol>
+          <li>Check your email for the licence key — it starts with <code>CS-</code>.</li>
+          <li>Open Code Studio and paste the key when prompted to activate.</li>
+          <li>Add your own Anthropic API key; your code and key stay with you.</li>
+        </ol>
+        <span class="ref" id="ref" hidden>
+          Reference for support: <code id="session"></code>
+        </span>
+      </div>
+
+      <p class="cta-row" style="margin-top: 28px">
+        <a class="btn primary" href="/#platforms">Back to downloads</a>
+        <a class="btn ghost" href="https://console.anthropic.com/" target="_blank" rel="noreferrer">Get an API key</a>
+      </p>
+
+      <p class="privacy">
+        Nothing arrived? Reply to your Stripe receipt and quote the reference
+        above and we will sort it out.
+      </p>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Code Studio by farseman · Powered by Claude ·
+        <a href="https://www.npmjs.com/package/@farseman/code-studio" target="_blank" rel="noreferrer">CLI on npm</a> ·
+        <a href="https://open-vsx.org/extension/farseman/code-studio" target="_blank" rel="noreferrer">Extension on Open VSX</a>
+      </p>
+    </footer>
+
+    <script>
+      // Stripe appends ?session_id=cs_... on redirect. Shown only as a support
+      // reference — it is not a licence key and is safe to display.
+      (function () {
+        var id = new URLSearchParams(window.location.search).get("session_id");
+        if (!id || !/^cs_[A-Za-z0-9_]+$/.test(id)) return;
+        document.getElementById("session").textContent = id;
+        document.getElementById("ref").hidden = false;
+      })();
+    </script>
+  </body>
+</html>
