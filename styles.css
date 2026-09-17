@@ -545,3 +545,17 @@ h2 {
     grid-template-columns: 1fr;
   }
 }
+.mini-skills {
+  margin: 0 0 14px;
+  color: var(--muted);
+  font-size: 12.5px;
+  line-height: 1.5;
+}
+.mini-skills span {
+  font-weight: 700;
+  color: var(--purple);
+  text-transform: uppercase;
+  font-size: 10.5px;
+  letter-spacing: 0.04em;
+  display: block;
+}
