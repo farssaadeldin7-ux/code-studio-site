@@ -545,10 +545,3 @@ h2 {
     grid-template-columns: 1fr;
   }
 }
-.pricing.compact .mini-skills {
-  margin: 0 0 16px;
-  color: var(--muted);
-  font-size: 13.5px;
-  line-height: 1.55;
-  flex: 1;
-}
