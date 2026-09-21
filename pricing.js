@@ -35,6 +35,15 @@ for (const section of document.querySelectorAll(".pricing")) {
       for (const plan of catalog.plans) {
         const el = section.querySelector(`[data-price="${plan.id}"]`);
         if (el && plan.price) el.textContent = dollars(plan.price);
+        // The catalog reports available:false when a plan's Stripe price is
+        // not configured — checkout would refuse it, so don't offer the click.
+        if (plan.available === false) {
+          const btn = section.querySelector(`.buy[data-plan="${plan.id}"]`);
+          if (btn) {
+            btn.disabled = true;
+            btn.textContent = "Coming soon";
+          }
+        }
       }
     } catch {
       for (const btn of section.querySelectorAll(".buy")) btn.disabled = true;
