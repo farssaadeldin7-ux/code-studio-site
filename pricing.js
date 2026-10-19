@@ -23,6 +23,18 @@ for (const section of document.querySelectorAll(".pricing")) {
   const pluginId = section.dataset.plugin;
   const note = section.querySelector(".checkout-note");
 
+  // Every plugin is also a free install from Open VSX — the licence is
+  // what this page sells; the extension itself costs nothing to try.
+  const install = document.createElement("p");
+  install.className = "openvsx-link";
+  const installLink = document.createElement("a");
+  installLink.href = `https://open-vsx.org/extension/code-studio/${pluginId}`;
+  installLink.target = "_blank";
+  installLink.rel = "noreferrer";
+  installLink.textContent = "Install free from Open VSX \u2192";
+  install.appendChild(installLink);
+  section.appendChild(install);
+
   const say = (message, isError) => {
     note.textContent = message;
     note.classList.toggle("error", Boolean(isError));
