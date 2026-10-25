@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy — Code Studio</title>
+    <meta name="description" content="What the Code Studio site and billing service collect, and what they never see." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="brand" href="/"><span class="brand-mark">&lt;/&gt;</span> Code Studio</a>
+        <div class="nav-links">
+          <a href="/">Home</a>
+          <a href="pricing.html">Pricing</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page">
+      <section class="hero compact-hero">
+        <h1>Privacy</h1>
+        <p class="lede">What we collect, why, and what we never see. Last updated 25 October 2026.</p>
+      </section>
+
+      <section class="features">
+        <h2>This website</h2>
+        <p class="section-sub">
+          codestudioplugin.com is a static site. It sets no cookies and runs no
+          analytics. The pricing page fetches the live catalogue from our
+          billing service so displayed prices always match checkout; that
+          request carries no personal data.
+        </p>
+
+        <h2>The plugins</h2>
+        <p class="section-sub">
+          Each Code Studio plugin runs entirely on your machine. Its only
+          network contact is our billing service at
+          billing.codestudioplugin.com, for licence checks and checkout. What
+          crosses the wire: a licence key, a plugin id, a hashed device
+          identifier, a device label (your machine's hostname) and usage
+          counts. The billing service never sees your prompts, your files,
+          your code or any tool input or output.
+        </p>
+
+        <h2>Purchases</h2>
+        <p class="section-sub">
+          Payments are processed by Stripe; we never see or store your card
+          details. For an active licence we keep: your email address, the
+          licence key, the plugin and plan purchased, subscription status,
+          and the device records above. We use this solely to operate
+          licensing — never for advertising, and we do not sell or share it.
+        </p>
+
+        <h2>Your choices</h2>
+        <p class="section-sub">
+          The free tools in every plugin work without a licence and send
+          nothing. To cancel a subscription, use the billing portal from your
+          plugin's licence tools. To ask about or delete your data, open an
+          issue at
+          <a href="https://github.com/farssaadeldin7-ux/claude-plugin-suite/issues" target="_blank" rel="noreferrer">github.com/farssaadeldin7-ux/claude-plugin-suite</a>.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Code Studio ·
+        <a href="/">Home</a> ·
+        <a href="pricing.html">Pricing</a> ·
+        <a href="privacy.html">Privacy</a>
+      </p>
+    </footer>
+  </body>
+</html>
